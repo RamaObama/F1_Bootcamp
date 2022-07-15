@@ -6,11 +6,13 @@
 
 function paskalsTriangle(x, y) {
   function factorial(z) {
-    for (j = k = 1; j <= z; j++)
+    let k = 0;
+    for (let j = k = 1; j <= z; j++)
       k *= j;
     return k;
   }
-  return factorial(y) / factorial(x) / factorial(x - y);
+
+  return factorial(y) / (factorial(x) * factorial(x - y));
 }
 
-paskalsTriangle(2, 3); // 3
+console.log(paskalsTriangle(2, 3)); // 3
