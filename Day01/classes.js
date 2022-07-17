@@ -32,25 +32,33 @@ class Employee {
     return (this.company = `${newCompanyName}`);
   }
 
-  upGrade(newGradeName) {
-    return (this.grade = `${newGradeName}`);
+  upGrade() {
+    if (this.grade === "L4") {
+      return;
+    } else {
+      this.grade = this.grade.split('');
+      this.grade[1]++;
+      this.grade = this.grade.join('');
+    }
   }
 
   addSkill(newSkillName) {
-    if (!this.hardSkills) {
-      return (this.hardSkills = [newSkillName]);
-    } else {
-      return (this.hardSkills = [...this.hardSkills, newSkillName]);
-    }
+    this.hardSkills.push(newSkillName);
   }
 }
 
-const user = new Employee("Tumen", "L1", ["JS"], "Google");
+//
+// const user = new Employee("Tumen", "L1", ["JS"], "Google");
+//
+// console.log(user);
+//
+// console.log(user.addSkill("TS"));
+// console.log(user.changeCompany("Apple"));
+// console.log(user.upGrade("L4"));
+// console.log(user);
 
-console.log(user);
-
-console.log(user.addSkill("TS"));
-console.log(user.changeCompany("Apple"));
-console.log(user.upGrade("L4"));
-console.log(user);
-
+//
+// const user = new Employee("Tumen", "L1", ["JS"], "Google");
+// console.log(user);
+// user.upGrade();
+// console.log(user);
