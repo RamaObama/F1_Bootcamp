@@ -19,6 +19,7 @@ body {
     top: 50%;
     left: 50%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px auto;
     transform: translate(-50%, -50%);
     box-shadow: -1px 2px 8px 0 rgba(34, 60, 80, 0.2);
     border-radius: 5px;
@@ -45,7 +46,6 @@ body {
     text-align: center;
     color: #fff;
     font-size: 36px;
-    margin-top: 30px;
 }
 
 .btn {
