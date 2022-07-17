@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none !important;
+    /*border: none;*/
+}
+.btn:active, .btn:hover, .btn:focus {
+    outline: 1px;
+    outline-offset: 0;
+    background: red;
+}
+.layout {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.layout .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1px 2px 8px 0 rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    width: 380px;
+    height: 500px;
+    /*Task color*/
+    /*background-color: rgb(109, 228, 220);*/
+    background-color: rgb(89, 229, 141);
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.inner {
+    padding: 20px 23px;
+}
+
+.count-window .input {
+    width: 249px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    color: rgba(125, 125, 125, 0.5);
+    display: inline-block;
+}
+
+.count-window .clean {
+    padding: 30px;
+    border-radius: 5px;
+    width: 80px;
+    background-color: red;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.digit .btn {
+    display: inline-block;
+    padding: 30px;
+    width: 80px;
+    background-color: #fff;
+    margin: 2px 0;
+    text-align: center;
+    border-radius: 5px;
+}
