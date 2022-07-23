@@ -1,6 +1,6 @@
 import './App.css';
 import StudentInfo from "./components/studentInfo";
-import StopWatch from "./components/stopWatch.";
+import StopWatch from "./components/stopWatch";
 import {useState} from "react";
 
 function App() {
